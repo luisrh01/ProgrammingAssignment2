@@ -31,11 +31,14 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If the matrix is not null it will pop up a message "getting caching data" and return the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
+  
   inv <- x$getinverse()
+  # only performed if we have an inverted matrix saved
   if(!is.null(inv)) {
     message("getting cached data.")
     return(inv)
   }
+  
   temp_matrix <- x$get()
   inv <- solve(temp_matrix)
   x$setinverse(inv)
