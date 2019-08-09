@@ -47,7 +47,4 @@ cacheSolve <- function(x, ...) {
 
 
 
-# the_matrix = rbind(c(1,0,0,0), c(0,1,0,0), c(0,0,1,0), c(0,0,0,1))
-# m = makeCacheMatrix(the_matrix)
-# cacheSolve(m)
 
